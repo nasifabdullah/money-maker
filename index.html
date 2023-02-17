@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl text-center font-bold text-orange-600 mt-4 mb-3">Money Master</h1>
+
+    <section class="text center bg-green-200 w-full md:w-2/3 lg:w-2/3 mx-auto text-2xl p-10 md:p-20 rounded space-y-3">
+        <h3 class=" text-center font-bold text-red-400 text-4xl">Income</h3>
+
+        <div class="text-center">
+            <h3 class="inline">Income:</h3>
+            <input id="income" class="" type="number">
+        </div>
+
+        <h2 class=" text-center font-bold text-red-400 text-4xl">Expenses</h2>
+        <div class="text-center">
+            <h3 class="inline">Food:</h3>
+            <input id="food" type="number">
+        </div>
+        <div class="text-center">
+            <h3 class="inline">Rent:</h3>
+            <input id="rent" type="number">
+        </div>
+        <div class="text-center">
+            <h3 class="inline">Cloths:</h3>
+            <input id="cloth" type="number">
+        </div>
+
+        <button id="calculate" class="bg-orange-400 px-8 py-3 block mx-auto rounded-xl text-white hover:bg-orange-600 hover:text-white mb-8">Calculate</button>
+
+
+        <div class="text-center font-semibold mb-10 grid grid-cols-1">
+            <h3 class="">Total Expenses: <span id="expenses" class="text-yellow-500">000</span></h3>
+            <h3>Balance: <span id="balance" class="text-yellow-500">000</span></h3>
+        </div>
+        <div class="text-center">
+            <h3 class="inline">Save: %</h3>
+            <input id="save" type="number" class="inline w-full md:w-1/3">
+        </div>
+        <button id="btn-save" class="bg-orange-400 px-8 py-3 block mx-auto rounded-xl text-white hover:bg-orange-600 hover:text-white mb-8">Savings</button>
+        <div class="text-center font-semibold grid grid-cols-1">
+            <h3>Saving Amount: <span id="saving-amount" class="text-yellow-500">000</span></h3>
+            <h3>Remaining Balance: <span id="remaining-amount" class="text-yellow-500"> 000</span></h3>
+        </div>
+    </section>
+
+    <script src="js/utilities.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
